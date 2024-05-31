@@ -11,6 +11,9 @@ class StudentForm1(forms.ModelForm):
     class Meta:
         model=Student
         fields='__all__'
+        widgets={'address':forms.Textarea(),
+                }
+        labels={'name':'enter your name',}
         
 
 
